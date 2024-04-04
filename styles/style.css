@@ -22,7 +22,7 @@ body{
   font-family: "Raleway",sans-serif;
   max-width: 1440px;
   min-width: 320px;
-  padding: 1rem;
+  padding: 1rem 3rem;
   margin: 0 auto;
 }
 
@@ -35,8 +35,8 @@ button{
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  height: 2rem;
-  padding: 0.5rem;
+  height: 2.5rem;
+  padding: 1rem 0.5rem;
   border-radius: 50px;
   background: transparent;
   border: 2px solid var(--greyBack);
@@ -48,6 +48,7 @@ button:hover{
   background: var(--lightBlue);
 }
 
+/* ------------------ */
 nav{
   display: flex;
   justify-content: space-between;
@@ -59,18 +60,23 @@ nav{
 .linksContainer ul{
   display: flex;
   gap: 5rem;
+}
+.linksContainer a{
   position: relative;
+
 }
 .linksContainer a:hover{
   color: var(--Bookiblue);
 }
-.linksContainer li:hover::before{
+.linksContainer a:hover::before{
   content: "";
   position: absolute;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: var(--Bookiblue);
+  top: -15px;
 }
+/* -------------------- */
 
 main{
   margin: 50px 0;
@@ -85,7 +91,57 @@ main{
   display: flex;
 }
 .formContainer{
-  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 15% 45% 40%;
+  align-items: center;
+  border: 1px solid var(--greyBack);
+  height: 3rem;
+  width: 20rem;
+  border-radius: 15px;
+}
+.mapIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--greyBack);
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+
+}
+#location{
+  width: 100%;
+  border: none; 
+  padding: 5px; 
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+}
+.subBtn{
+  display: flex;
+  justify-content: center;
+  background: var(--Bookiblue);
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+
+  #formSubBtn{
+    background: transparent;
+    border: none;
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+}
+/* -------------------------- */
+
+.filterContainer ul{
   display: flex;
   align-items: center;
+  gap: 1rem;
+
+  #filter{
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
 }
