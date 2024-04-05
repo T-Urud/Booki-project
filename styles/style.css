@@ -22,7 +22,7 @@ body{
   font-family: "Raleway",sans-serif;
   max-width: 1440px;
   min-width: 320px;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem 0 2rem;
   margin: 0 auto;
 }
 
@@ -167,13 +167,13 @@ main{
   display: grid;
   grid-template-columns: 70% 30%;
   gap: 2.5rem;
+  max-width: 1440px;
 }
 .houseInArea{
   background: var(--greyBack);
   border-radius: 15px;
   padding: 1.2rem;
-  /* height: 38.5rem; */
-  width: 54rem;
+  max-width: 54rem;
 
   h2{
     font-size: 1.2rem;
@@ -189,9 +189,9 @@ main{
 
   .roomImg{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 1.5rem 1.5rem 0 0;
-
   }
 }
 .card{
@@ -210,10 +210,37 @@ main{
 
 .cardPreview{
   overflow: hidden;
-  height: 12rem;
+  height: 7rem;
   width: 100%;
 }
+.generalInfos{
+  padding: 0.5rem;
+  line-height: 1.5rem;
 
+  .priceInfo{
+    font-size: 0.9rem;
+  }
+
+  img{
+    fill: red;
+  }
+}
+#more{
+  margin-top: 1rem;
+}
 .popularSection{
   display: none;
 }
+
+.activitySection{
+  display: none;
+}
+
+/* ----------------------------------- */
+  .footerContainer{
+    background: var(--greyBack);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    line-height: 2rem;
+    padding: 1rem;
+  }
