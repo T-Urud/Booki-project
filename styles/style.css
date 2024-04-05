@@ -164,13 +164,28 @@ main{
 /* ---------------------------- */
 
 .houseSection{
-  background: var(--greyBack);
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 2.5rem;
 }
 .houseInArea{
+  background: var(--greyBack);
+  border-radius: 15px;
+  padding: 1.2rem;
+  /* height: 38.5rem; */
+  width: 54rem;
+
+  h2{
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem 1rem;
+  }
+}
+.cardGroup{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 2rem;
+  row-gap: 1.75rem;
+  justify-items: center;
 
   .roomImg{
     width: 100%;
@@ -197,4 +212,8 @@ main{
   overflow: hidden;
   height: 12rem;
   width: 100%;
+}
+
+.popularSection{
+  display: none;
 }
