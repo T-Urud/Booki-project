@@ -33,7 +33,7 @@ a{
 
 h2{
   font-size: 1.2rem;
-  margin: 0 0 1.5rem 1rem;
+  margin-bottom: 1.5rem;
 }
 
 button{
@@ -142,7 +142,7 @@ main{
 .houseSection{
   display: grid;
   grid-template-columns: 70% 30%;
-  gap: 2.5rem;
+  gap: 2rem;
   max-width: 1440px;
 }
 .houseInArea{
@@ -191,31 +191,56 @@ main{
   .priceInfo{
     font-size: 0.9rem;
   }
-
-  img{
-    fill: red;
-  }
 }
 #more{
   margin: 1rem 0 0 1rem;
 }
 .popularSection{
   background: var(--greyBack);
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .titleContainer{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .popularCard{
-  width: 23rem;
   height: 9rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 0.3rem;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
+  background: #FFFFFF;
 }
 .roomPicture{
-  width: 6rem;
-  height: 8rem;
+  width: 100%;
+  height: 100%;
 
   img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem 0 0 1.5rem;
+
   }
 }
+.hotelInfos{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  justify-content: space-between;
 
+  .priceInfo{
+    margin-top: 0.5rem;
+  }
+}
+.rating{
+}
 
 /* --- ACTIVITY SECTION --- */
 
@@ -226,6 +251,7 @@ main{
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
   }
 }
 .activityCard{
