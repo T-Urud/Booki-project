@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maquette Booki</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/header-footer.css">
 </head>
+
 <body>
   <header>
     <nav>
@@ -41,7 +43,7 @@
     </div>
     <div class="filterContainer">
       <ul>
-        <li><span id="filter">Filtres</span></li>
+        <li><span id="filterSpan">Filtres</span></li>
         <li><button><img src="./svg/money-bill-wave-solid.svg" alt="icon billet" height="20" width="20">Economique</button></li>
         <li><button><img src="./svg/person-solid.svg" alt="icon pour représenter une personne" height="20" width="20">Familial</button></li>
         <li><button><img src="./svg/heart-solid.svg" alt="icon coeur" height="20" width="20">Romantique</button></li>
@@ -185,38 +187,40 @@
       
     <section class="activitySection">
       <h2>Activités à Marseille</h2>
-      <a href="#">
-        <article class="activityCard">
-          <div class="activityImg">
-            <img src="./img/activities/vieux-port.jpg" alt="photo de bateaux">
-          </div>
-          <h4>Vieux-Port</h4>
-        </article>  
-      </a>
-      <a href="#">
-        <article class="activityCard">
-          <div class="activityImg">
-            <img src="./img/activities/fort.jpg" alt="photo du Fort de Pomègues">
-          </div>
-          <h4>Fort de Pomègues</h4>
-        </article>  
-      </a>
-      <a href="#">
-        <article class="activityCard">
-          <div class="activityImg">
-            <img src="./img/activities/calanques.jpg" alt="photo du Parc national des Calanques">
-          </div>
-          <h4>Parc national des Calanques</h4>
-        </article>  
-      </a>
-      <a href="#">
-        <article class="activityCard">
-          <div class="activityImg">
-            <img src="./img/activities/ville.jpg" alt="photo de Notre-Dame-de-la-Garde">
-          </div>
-          <h4>Notre-Dame-de-la-Garde</h4>
-        </article>  
-      </a>
+      <div class="activityContainer">
+        <a href="#">
+          <article class="activityCard">
+            <div class="activityImg">
+              <img src="./img/activities/vieux-port.jpg" alt="photo de bateaux">
+            </div>
+            <h4>Vieux-Port</h4>
+          </article>  
+        </a>
+        <a href="#">
+          <article class="activityCard">
+            <div class="activityImg">
+              <img src="./img/activities/fort.jpg" alt="photo du Fort de Pomègues">
+            </div>
+            <h4>Fort de Pomègues</h4>
+          </article>  
+        </a>
+        <a href="#">
+          <article class="activityCard">
+            <div class="activityImg">
+              <img src="./img/activities/calanques.jpg" alt="photo du Parc national des Calanques">
+            </div>
+            <h4>Parc national des Calanques</h4>
+          </article>  
+        </a>
+        <a href="#">
+          <article class="activityCard">
+            <div class="activityImg">
+              <img src="./img/activities/ville.jpg" alt="photo de Notre-Dame-de-la-Garde">
+            </div>
+            <h4>Notre-Dame-de-la-Garde</h4>
+          </article>  
+        </a>  
+      </div>
     </section>
     </main>
     
