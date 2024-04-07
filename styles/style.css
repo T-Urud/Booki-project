@@ -140,10 +140,9 @@ main{
 /* ---------------------------- */
 
 .houseSection{
-  display: grid;
-  grid-template-columns: 70% 30%;
-  /* gap: 2rem; */
-  /* max-width: 1440px; */
+  width: 100%;
+  display: flex;
+  gap: 20px;
 }
 .houseInArea{
   background: var(--greyBack);
@@ -170,8 +169,8 @@ main{
   background: #FFFFFF;
   padding: 0.3rem;
   border-radius: 1.5rem;
-  width: 15.5rem;
-  height: 13rem;
+  width: 243px;
+  height: 207;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
 }
 .card:hover{
@@ -203,6 +202,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 100%;
 
   .titleContainer{
     display: flex;
@@ -210,7 +210,8 @@ main{
   }
 }
 .popularCard{
-  height: 9rem;
+  height: 146px;
+  width: 369px;
   display: grid;
   grid-template-columns: 30% 70%;
   padding: 0.3rem;
