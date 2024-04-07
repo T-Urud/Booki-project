@@ -11,7 +11,7 @@
   --text: #000000;
 }
 
-*{
+*, ::before, ::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,7 +32,7 @@ a{
 }
 
 h2{
-  font-size: 1.2rem;
+  font-size: 1.2em;
   margin-bottom: 1.5rem;
 }
 
@@ -58,7 +58,7 @@ main{
   margin: 50px 0;
 }
 #motto{
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin-bottom: 0.5rem;
 }
 
@@ -117,7 +117,7 @@ main{
   gap: 1rem;
 
   #filterSpan{
-    font-size: 0.9rem;
+    font-size: 0.9em;
     font-weight: bold;
   }
 }
@@ -142,14 +142,15 @@ main{
 .houseSection{
   display: grid;
   grid-template-columns: 70% 30%;
-  gap: 2rem;
-  max-width: 1440px;
+  /* gap: 2rem; */
+  /* max-width: 1440px; */
 }
 .houseInArea{
   background: var(--greyBack);
   border-radius: 15px;
   padding: 1.2rem;
   max-width: 54rem;
+  width: 100%;
 }
 .cardGroup{
   display: grid;
@@ -189,7 +190,7 @@ main{
   line-height: 1.5rem;
 
   .priceInfo{
-    font-size: 0.9rem;
+    font-size: 0.9em;
   }
 }
 #more{
@@ -220,6 +221,7 @@ main{
 .roomPicture{
   width: 100%;
   height: 100%;
+  overflow: hidden;
 
   img{
     width: 100%;
@@ -239,29 +241,28 @@ main{
     margin-top: 0.5rem;
   }
 }
-.rating{
-}
 
 /* --- ACTIVITY SECTION --- */
 
 .activitySection{
   margin: 2.5rem auto;
+  padding: 0 1rem;
 
   .activityContainer{
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
   }
 }
 .activityCard{
-  width: 19rem;
-  height: 27.5rem;
+  width: 16rem;
+  height: 25rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px 5px;
   border-radius: 1.5rem;
 
   .activityImg{
-    height: 24rem;
+    height: 22rem;
 
     img{
       height: 100%;
@@ -273,7 +274,8 @@ main{
   }
 
   h4{
-    padding: 1rem;
+    padding: 1rem 0.5rem;
+    font-size: 0.9em;
   }
 }
 .activityCard:hover{
