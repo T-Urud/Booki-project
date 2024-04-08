@@ -1,4 +1,7 @@
 /* ------------------ */
+header{
+  margin-top: 15px;
+}
 nav{
   display: flex;
   justify-content: space-between;
