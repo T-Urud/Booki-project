@@ -268,9 +268,9 @@ main{
 
   .activityContainer{
     display: flex;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
-    gap: 1rem;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 100%;
   }
 }
 .activityCard{
