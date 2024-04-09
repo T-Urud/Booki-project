@@ -1,0 +1,23 @@
+/* TABLETS */
+
+@media screen and (max-width: 1024px){
+
+  .houseSection{
+    flex-wrap: wrap;
+  }
+
+  .houseInArea{
+    max-width:none;
+  }
+
+  .popularSection{
+
+    .cardContainer{
+      flex-direction: row;
+    }
+  }
+
+  .activitySection{
+    display: none;
+  }
+}
