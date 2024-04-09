@@ -237,7 +237,7 @@ main{
   height: 146px;
   width: 100%;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 35% 65%;
   padding: 0.3rem;
   border-radius: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
@@ -253,10 +253,11 @@ main{
   width: 100%;
   height: 100%;
   overflow: hidden;
-
+  
   img{
     width: 100%;
     height: 100%;
+    overflow: hidden;
     object-fit: cover;
     border-radius: 1.5rem 0 0 1.5rem;
 
@@ -289,13 +290,16 @@ main{
   }
 }
 .activityCard{
-  width: 210px;
+  max-width: 210px;
+  width: 100%;
   height: 439px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 15px 0px;
   border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
 
   .activityImg{
-    height: 380px;
+    height: 90%;
 
     img{
       height: 100%;
@@ -306,9 +310,9 @@ main{
     }
   }
 
-  h4{
-    padding: 1rem 0.5rem;
-    font-size: 0.9em;
+  .activityName{
+    margin: 10px 0 0 10px;
+    font-size: 0.8em;
   }
 }
 .activityCard:hover{

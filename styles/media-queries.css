@@ -7,17 +7,58 @@
   }
 
   .houseInArea{
-    max-width:none;
+    max-width: none;
   }
 
   .popularSection{
+    width: 100%;
 
     .cardContainer{
       flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .popularCard{
+      max-width: 275px;
     }
   }
 
   .activitySection{
-    display: none;
+    margin: 2.5rem auto 0;
+    padding: 0;
+  }
+  .activityContainer{
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .activityCard{
+    min-width: 210px;
+    height: 270px;
+    width: 25%;
+
+    .activityImg{
+      height: 80%;
+      width: 100%;
+    }
+  }
+}
+
+/* rendre les cards + jolies à l'affichage  */
+@media screen and (min-width: 875px) and (max-width: 1024px){
+  .card{
+    width: 240px;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+
+  .hotelInfos{
+    h4{
+      font-size: 0.9em;
+    }
+    .priceInfo{
+      font-size: 0.9em;
+    }
   }
 }
