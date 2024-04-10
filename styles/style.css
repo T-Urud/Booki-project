@@ -20,10 +20,17 @@
 
 body{
   font-family: "Raleway",sans-serif;
-  max-width: 1440px;
-  padding: 0 50px;
   margin: 0 auto;
+  justify-content: center;
+  display: flex;
+
 }
+.generalContainer{
+  padding: 0 50px;
+  width: 100%;
+  max-width: 1440px;
+}
+
 
 svg{
   width: 15px;
@@ -37,7 +44,7 @@ a{
 }
 
 h2{
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -58,17 +65,12 @@ button:hover{
   background: var(--lightBlue);
 }
 
-.generalContainer{
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
 
 main{
   margin: 50px 0;
 }
 #motto{
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -131,7 +133,7 @@ main{
   gap: 1rem;
 
   #filterSpan{
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: bold;
   }
 }
@@ -219,7 +221,7 @@ main{
   }
 
   .priceInfo{
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
 }
 #more{
@@ -289,13 +291,12 @@ main{
 
 /* --- ACTIVITY SECTION --- */
 
+
 .activitySection{
   margin: 2.5rem auto;
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
-
+  
   .activityContainer{
     display: flex;
     justify-content: space-between;
@@ -310,25 +311,59 @@ main{
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
-
+  
   .activityImg{
     height: 90%;
-
+    
     img{
       height: 100%;
       width: 100%;
       object-fit: cover;
       border-radius: 1.5rem 1.5rem 0 0;
-  
+      
     }
   }
 
   .activityName{
     margin: 10px 0 0 10px;
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 }
-.activityCard:hover{
-  transform: scale(1.02);
-  transition: ease-in-out 0.2s;
+  .activityCard:hover{
+    transform: scale(1.02);
+    transition: ease-in-out 0.2s;
+  }
+
+  /* TEST ActivitySection */
+  /* modif dans html avec suppression des div (on laisse juste article --> img + h4) */
+
+  /* .activitySection{
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+
+  .activityContainer{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
 }
+.activityCard{
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 15px 0px;
+  border-radius: 1.5rem;
+  
+  img{
+      max-width: 210px;
+      height: 380px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+  h4{
+    margin: 5px 0 0 10px;
+    font-size: 0.8em;
+  }
+} */

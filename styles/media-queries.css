@@ -1,3 +1,13 @@
+
+@media screen and (min-width: 1024px) and (max-width: 1036px){
+  .hotelInfos h4{
+    font-size: 0.9rem;
+  }
+  .priceInfo{
+    font-size: 0.8rem;
+  }
+}
+
 /* TABLETS */
 
 @media screen and (max-width: 1024px){
@@ -29,12 +39,13 @@
   }
   .activityContainer{
     gap: 10px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
   .activityCard{
-    min-width: 210px;
+    /* min-width: 210px; */
+    /* si pas de min-width, responsive */
     height: 270px;
-    width: 25%;
+    width: 100%;
 
     .activityImg{
       height: 80%;
@@ -55,10 +66,85 @@
 
   .hotelInfos{
     h4{
-      font-size: 0.9em;
+      font-size: 0.9rem;
     }
     .priceInfo{
-      font-size: 0.9em;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+
+/* PHONES */
+
+@media screen and (max-width:767.98px){
+  body{
+    display: block;
+  }
+  
+  .generalContainer{
+    padding: 0;
+  }
+
+  .filterContainer ul{
+    flex-flow: row wrap;
+  }
+
+  .houseSection{
+    flex-direction: column-reverse;
+    gap: 0;
+
+    .houseInArea{
+      background: #FFFF;
+
+      h2{
+        margin: 1rem 0 0 1rem;
+      }
+    }
+  }
+
+  .cardGroup{
+    flex-direction: column;
+  }
+  .card{
+    max-width: 335px;
+    height: 146px;
+
+    .cardPreview{
+      height: 90%;
+    }
+  }
+
+  .popularSection{
+    border-radius: 0;
+
+    .cardContainer{
+      flex-direction: column;
+
+      .popularCard{
+        max-width: none;
+      }
+    }
+  }
+
+  .activitySection{
+
+    .activityContainer{
+      flex-direction: column;
+    }
+  }
+
+  header nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footerContainer{
+    display: block;
+
+    div:nth-child(2){
+      margin: 20px 0;
     }
   }
 }
