@@ -24,10 +24,11 @@ body{
   padding: 0 50px;
   margin: 0 auto;
 }
-.generalContainer{
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+
+svg{
+  width: 15px;
+  height: 15px;
+  fill: var(--Bookiblue);
 }
 
 a{
@@ -57,6 +58,11 @@ button:hover{
   background: var(--lightBlue);
 }
 
+.generalContainer{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 
 main{
   margin: 50px 0;
@@ -205,9 +211,12 @@ main{
 }
 .generalInfos{
   padding: 0.5rem;
-  line-height: 1.5rem;
   display: flex;
   flex-direction: column;
+
+  .infos{
+    margin-bottom: 1rem;
+  }
 
   .priceInfo{
     font-size: 0.9em;
@@ -272,6 +281,10 @@ main{
   .priceInfo{
     margin-top: 0.5rem;
   }
+}
+
+.lastStar{
+  fill: var(--greyBack);
 }
 
 /* --- ACTIVITY SECTION --- */
