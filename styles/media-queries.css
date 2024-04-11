@@ -74,7 +74,7 @@
   }
 }
 
-
+/* ----------------------------- */
 /* PHONES */
 
 @media screen and (max-width:767.98px){
@@ -84,6 +84,36 @@
   
   .generalContainer{
     padding: 0;
+  }
+
+  .searchContainer{
+    justify-content: center;
+
+    .formContainer{
+      grid-template-columns: 15% 70% 15%;
+
+      #location{
+        text-align: left;
+        margin-left: 10px;
+      }
+    }
+    .subBtn{
+      border-radius: 15px;
+
+      #formSubBtn{
+        display: none;
+      }
+    }
+    #mobileSpan{
+      display: flex;
+      align-items: center;
+
+      svg{
+        fill: #FFFF;
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 
   .filterContainer ul{
@@ -109,6 +139,7 @@
   .card{
     max-width: 335px;
     height: 146px;
+    aspect-ratio: 1;
 
     .cardPreview{
       height: 90%;
@@ -131,8 +162,18 @@
 
     .activityContainer{
       flex-direction: column;
+      align-items: center;
+
+      .activityCard{
+        max-width: 243px;
+        aspect-ratio: 1;
+      }
     }
   }
+
+
+
+
 
   header nav{
     flex-direction: column;
