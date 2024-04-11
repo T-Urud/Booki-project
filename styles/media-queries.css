@@ -12,6 +12,10 @@
 
 @media screen and (max-width: 1024px){
 
+  .filterContainer{
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .houseSection{
     flex-wrap: wrap;
   }
@@ -81,9 +85,24 @@
   body{
     display: block;
   }
-  
   .generalContainer{
     padding: 0;
+  }
+
+  p{
+      font-size: 0.9rem;
+  }
+  h1{
+    font-size: 1.2rem;
+  }
+
+  button{
+    max-width: 170px;
+    width: 100%;
+  }
+
+  .motto{
+    padding: 0 16px;
   }
 
   .searchContainer{
@@ -116,9 +135,30 @@
     }
   }
 
-  .filterContainer ul{
-    flex-flow: row wrap;
+  .filterContainer,
+  .houseAvailable{
+    padding: 0 16px;
   }
+  .filterContainer div{
+    width: 100%;
+  }
+  .filterContainer ul{
+    /* flex-flow: row wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    width: 100%;
+  }
+
+  /* mediaQuery pour rendre filtres + jolie à l'affichage */
+  @media screen and (max-width:400px){
+    .filterContainer ul{
+      justify-items: start;
+    }
+  }
+
+  /* ---------------------------------- */
 
   .houseSection{
     flex-direction: column-reverse;
@@ -135,15 +175,20 @@
 
   .cardGroup{
     flex-direction: column;
+    align-items: center;
   }
   .card{
-    max-width: 335px;
+    max-width: 336px;
+    min-width: 335px;
     height: 146px;
     aspect-ratio: 1;
 
     .cardPreview{
       height: 90%;
     }
+  }
+  #more{
+    margin: 0 0 1rem 1rem;
   }
 
   .popularSection{
@@ -159,13 +204,14 @@
   }
 
   .activitySection{
+    padding: 0 25px;
 
     .activityContainer{
       flex-direction: column;
-      align-items: center;
 
       .activityCard{
-        max-width: 243px;
+        width: 700px;
+        height: 200px;
         aspect-ratio: 1;
       }
     }
@@ -179,6 +225,26 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    border-bottom: 1px solid var(--greyBack);
+
+    .linksContainer{
+      margin-bottom: 15px;
+    }
+  }
+
+  .linksContainer a:hover::before{
+    content: "";
+    height: 0;
+  }
+  
+  .linksContainer a:hover::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--Bookiblue);
+    top: 32px;
+    left: 0;  
   }
 
   .footerContainer{

@@ -127,6 +127,12 @@ h1{
 }
 /* -------------------------- */
 
+.filterContainer{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .filterContainer ul{
   display: flex;
   align-items: center;
