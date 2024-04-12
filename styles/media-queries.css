@@ -107,9 +107,11 @@
 
   .searchContainer{
     justify-content: center;
+    width: 100%;
 
     .formContainer{
       grid-template-columns: 15% 70% 15%;
+      width: 90%;
 
       #location{
         text-align: left;
@@ -127,10 +129,8 @@
       display: flex;
       align-items: center;
 
-      svg{
-        fill: #FFFF;
-        width: 20px;
-        height: 20px;
+      i{
+        color: #FFFF;
       }
     }
   }
@@ -143,18 +143,18 @@
     width: 100%;
   }
   .filterContainer ul{
-    /* flex-flow: row wrap; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    flex-flow: row wrap;
     justify-items: center;
     width: 100%;
-  }
+    gap: 15px 2%;
 
-  /* mediaQuery pour rendre filtres + jolie à l'affichage */
-  @media screen and (max-width:400px){
-    .filterContainer ul{
-      justify-items: start;
+    li{
+      width: 48%;
+
+      button{
+        max-width: none;
+        justify-content: center;
+      }
     }
   }
 
@@ -166,9 +166,10 @@
 
     .houseInArea{
       background: #FFFF;
+      padding: 0 25px;
 
       h2{
-        margin: 1rem 0 0 1rem;
+        margin: 1rem 0 0 0;
       }
     }
   }
@@ -176,17 +177,26 @@
   .cardGroup{
     flex-direction: column;
     align-items: center;
-  }
-  .card{
-    max-width: 336px;
-    min-width: 335px;
-    height: 146px;
-    aspect-ratio: 1;
+    gap: 15px 2%;
 
-    .cardPreview{
-      height: 90%;
+    a{
+      width: 100%;
     }
   }
+  .card{
+    width: 100%;
+    max-width: none;
+    height: 146px;
+  }
+  
+.generalInfos{
+  padding: 0.5rem 0.5rem 0 0.5rem;
+
+  .infos{
+    margin: 0;
+  }
+}
+
   #more{
     margin: 0 0 1rem 1rem;
   }
@@ -208,11 +218,14 @@
 
     .activityContainer{
       flex-direction: column;
+      gap: 15px 2%;
+
+      a{
+        width: 100%;
+      }
 
       .activityCard{
-        width: 700px;
         height: 200px;
-        aspect-ratio: 1;
       }
     }
   }
@@ -225,10 +238,21 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    border-bottom: 1px solid var(--greyBack);
 
     .linksContainer{
-      margin-bottom: 15px;
+      width: 100%;
+      
+      ul{
+        gap: 0;
+      }
+      
+      li{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--greyBack);
+      }
     }
   }
 
@@ -237,14 +261,12 @@
     height: 0;
   }
   
-  .linksContainer a:hover::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: var(--Bookiblue);
-    top: 32px;
-    left: 0;  
+  .linksContainer li:hover{
+    border-bottom: 1px solid var(--Bookiblue);
+    
+    a{
+      color: var(--Bookiblue);
+    }
   }
 
   .footerContainer{
