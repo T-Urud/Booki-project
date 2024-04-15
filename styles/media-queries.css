@@ -1,4 +1,4 @@
-
+/* mediaQuery font sizes */
 @media screen and (min-width: 1024px) and (max-width: 1036px){
   .hotelInfos h4{
     font-size: 0.9rem;
@@ -8,6 +8,18 @@
   }
 }
 
+@media screen and (max-width: 850px) {
+  .hotelInfos{
+    h4{
+      font-size: 0.9rem;
+    }
+    .priceInfo{
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/* --------------------------- */
 /* TABLETS */
 
 @media screen and (max-width: 1024px){
@@ -43,37 +55,14 @@
   }
   .activityContainer{
     gap: 10px;
-    /* flex-wrap: wrap; */
   }
   .activityCard{
-    /* min-width: 210px; */
-    /* si pas de min-width, responsive */
     height: 270px;
     width: 100%;
 
     .activityImg{
       height: 80%;
       width: 100%;
-    }
-  }
-}
-
-/* rendre les cards + jolies à l'affichage  */
-@media screen and (min-width: 875px) and (max-width: 1024px){
-  .card{
-    width: 240px;
-  }
-
-}
-
-@media screen and (max-width: 850px) {
-
-  .hotelInfos{
-    h4{
-      font-size: 0.9rem;
-    }
-    .priceInfo{
-      font-size: 0.9rem;
     }
   }
 }
@@ -227,53 +216,6 @@
       .activityCard{
         height: 200px;
       }
-    }
-  }
-
-
-
-
-
-  header nav{
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-
-    .linksContainer{
-      width: 100%;
-      
-      ul{
-        gap: 0;
-      }
-      
-      li{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 15px;
-        border-bottom: 1px solid var(--greyBack);
-      }
-    }
-  }
-
-  .linksContainer a:hover::before{
-    content: "";
-    height: 0;
-  }
-  
-  .linksContainer li:hover{
-    border-bottom: 1px solid var(--Bookiblue);
-    
-    a{
-      color: var(--Bookiblue);
-    }
-  }
-
-  .footerContainer{
-    display: block;
-
-    div:nth-child(2){
-      margin: 20px 0;
     }
   }
 }
