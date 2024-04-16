@@ -302,10 +302,6 @@ h1{
   }
 }
 
-.lastStar{
-  fill: var(--greyBack);
-}
-
 /* --- ACTIVITY SECTION --- */
 .activitySection{
   margin: 2.5rem auto;

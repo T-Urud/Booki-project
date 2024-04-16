@@ -108,7 +108,8 @@
       }
     }
     .subBtn{
-      border-radius: 15px;
+      border-radius: 15px;      
+      cursor: pointer;
 
       #formSubBtn{
         display: none;
