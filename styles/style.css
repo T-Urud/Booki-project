@@ -240,6 +240,10 @@ h1{
   .priceInfo{
     font-size: 0.9rem;
   }
+
+  .rating{
+    display: flex;
+  }
 }
 #more{
   margin: 1.5rem 0 1rem 1rem;
