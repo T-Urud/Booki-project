@@ -9,15 +9,14 @@
 }
 
 @media screen and (max-width: 850px) {
-  .hotelInfos{
-    h4{
-      font-size: 0.9rem;
-    }
-    .priceInfo{
-      font-size: 0.9rem;
-    }
+  .hotelInfos h4{
+    font-size: 0.9rem;
+  }
+  .priceInfo{
+    font-size: 0.9rem;
   }
 }
+
 
 /* --------------------------- */
 /* TABLETS */
@@ -38,16 +37,17 @@
 
   .popularSection{
     width: 100%;
+  }
 
-    .cardContainer{
+  .popularSection .cardContainer{
       flex-direction: row;
       justify-content: space-between;
     }
 
-    .popularCard{
-      max-width: 275px;
-    }
+  .popularCard{
+    max-width: 275px;
   }
+    
 
   .activitySection{
     margin: 2.5rem auto 0;
@@ -59,11 +59,10 @@
   .activityCard{
     height: 270px;
     width: 100%;
-
-    .activityImg{
-      height: 80%;
-      width: 100%;
-    }
+  }
+  .activityCard .activityImg{
+    height: 80%;
+    width: 100%;
   }
 }
 
@@ -97,33 +96,37 @@
   .searchContainer{
     justify-content: center;
     width: 100%;
-
-    .formContainer{
-      grid-template-columns: 15% 70% 15%;
-      width: 90%;
-
-      #location{
-        text-align: left;
-        margin-left: 10px;
-      }
-    }
-    .subBtn{
-      border-radius: 15px;      
-      cursor: pointer;
-
-      #formSubBtn{
-        display: none;
-      }
-    }
-    #mobileSpan{
-      display: flex;
-      align-items: center;
-
-      i{
-        color: #FFFF;
-      }
-    }
   }
+    
+  .formContainer{
+    grid-template-columns: 15% 85%;
+    width: 90%;
+  }
+
+  #location{
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .subBtn{
+    border-radius: 15px;      
+    cursor: pointer;
+    width: 40%;
+  }
+
+  #formSubBtn{
+    display: none;
+  }
+    
+  #mobileSpan{
+    display: flex;
+    align-items: center;
+  }
+  #glass{
+    color: #FFFF;
+  }
+  
+    
 
   .filterContainer,
   .houseAvailable{
@@ -137,86 +140,86 @@
     justify-items: center;
     width: 100%;
     gap: 15px 2%;
-
-    li{
-      width: 48%;
-
-      button{
-        max-width: none;
-        justify-content: center;
-      }
-    }
   }
+
+  .filterContainer li{
+    width: 48%;
+  }
+
+  button{
+    max-width: none;
+    justify-content: center;
+  }
+  
 
   /* ---------------------------------- */
 
   .houseSection{
     flex-direction: column-reverse;
     gap: 0;
+  }
 
-    .houseInArea{
-      background: #FFFF;
-      padding: 0 25px;
-
-      h2{
-        margin: 1rem 0 0 0;
-      }
-    }
+  .houseInArea{
+    background: #FFFF;
+    padding: 0 25px;
+  }
+  .houseInArea h2{
+    margin: 1rem 0 0 0;
   }
 
   .cardGroup{
     flex-direction: column;
     align-items: center;
     gap: 15px 2%;
-
-    a{
-      width: 100%;
-    }
   }
+
+  .cardGroup a{
+    width: 100%;
+  }
+  
   .card{
     width: 100%;
     max-width: none;
     height: 146px;
   }
   
-.generalInfos{
+  .generalInfos{
   padding: 0.5rem 0.5rem 0 0.5rem;
+  }
 
   .infos{
     margin: 0;
   }
-}
-
+  
   #more{
     margin: 0 0 1rem 1rem;
   }
 
   .popularSection{
     border-radius: 0;
-
-    .cardContainer{
+  }
+  .popularSection .cardContainer{
       flex-direction: column;
-
-      .popularCard{
-        max-width: none;
-      }
-    }
   }
 
+  .popularCard{
+    max-width: none;
+  }
+    
   .activitySection{
     padding: 0 25px;
+  }
 
-    .activityContainer{
-      flex-direction: column;
-      gap: 15px 2%;
+  .activitySection .activityContainer{
+    flex-direction: column;
+    gap: 15px 2%;
+  }
 
-      a{
-        width: 100%;
-      }
+  .activityContainer a{
+    width: 100%;
+  }
 
-      .activityCard{
-        height: 200px;
-      }
-    }
+  .activityCard{
+    height: 200px;
   }
 }
